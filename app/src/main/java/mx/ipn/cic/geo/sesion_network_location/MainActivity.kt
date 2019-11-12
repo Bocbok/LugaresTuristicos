@@ -15,7 +15,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 class MainActivity : AppCompatActivity(), OnMapReadyCallback, View.OnClickListener {
 
     private var mMap: GoogleMap? = null
-    private var sitios : Array<LatLng?> = arrayOfNulls(6)
+    private var positions : Array<LatLng?> = arrayOfNulls(6)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,16 +53,16 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, View.OnClickListen
     }
 
     private fun initMarkers() {
-        sitios[0] = LatLng(48.635957,-1.5136537)
-        sitios[1] = LatLng(51.5007758,-0.1247803)
-        sitios[2] = LatLng(48.8583701,2.2922926)
-        sitios[3] = LatLng(43.722952,10.3944083)
-        sitios[4] = LatLng(48.8737917,2.2928388)
-        sitios[5] = LatLng(41.8905691,12.4901099)
+        positions[0] = LatLng(48.635957,-1.5136537)
+        positions[1] = LatLng(51.5007758,-0.1247803)
+        positions[2] = LatLng(48.8583701,2.2922926)
+        positions[3] = LatLng(43.722952,10.3944083)
+        positions[4] = LatLng(48.8737917,2.2928388)
+        positions[5] = LatLng(41.8905691,12.4901099)
     }
 
     override fun onClick(view: View) {
-        mMap!!.addMarker(MarkerOptions().position(sitios[Integer.valueOf(view.tag.toString())]!!))
-        moveCameraToPosition(sitios[Integer.valueOf(view.tag.toString())]!!)
+        mMap!!.addMarker(MarkerOptions().position(positions[Integer.valueOf(view.tag.toString())]!!))
+        moveCameraToPosition(positions[Integer.valueOf(view.tag.toString())]!!)
     }
 }
