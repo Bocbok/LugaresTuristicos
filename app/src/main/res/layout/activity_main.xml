@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/activity_maps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.60"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/site_one"
+            android:onClick="onClick"
+            android:tag="0"
+            android:text="@string/button_st_michel"
+            style="@style/button_style" />
+
+        <Button
+            android:id="@+id/site_two"
+            style="@style/button_style"
+            android:onClick="onClick"
+            android:tag="1"
+            android:text="@string/button_big_ben" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/site_three"
+            style="@style/button_style"
+            android:onClick="onClick"
+            android:tag="2"
+            android:text="@string/button_eiffel_tower" />
+
+        <Button
+            android:id="@+id/site_four"
+            style="@style/button_style"
+            android:onClick="onClick"
+            android:tag="3"
+            android:text="@string/button_pisa" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/site_five"
+            style="@style/button_style"
+            android:onClick="onClick"
+            android:tag="4"
+            android:text="@string/button_triomphe" />
+
+        <Button
+            android:id="@+id/site_six"
+            style="@style/button_style"
+            android:onClick="onClick"
+            android:tag="5"
+            android:text="@string/button_coliseum" />
+    </LinearLayout>
+</LinearLayout>

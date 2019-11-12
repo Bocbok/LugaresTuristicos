@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GoogleMapsApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="button_st_michel">St-Michel</string>
+    <string name="button_pisa">Torre di Pisa</string>
+    <string name="button_eiffel_tower">Tour Eiffel</string>
+    <string name="button_triomphe">Arc de Triomphe</string>
+    <string name="button_big_ben">Big ben</string>
+    <string name="button_coliseum">Coliseum</string>
+</resources>
